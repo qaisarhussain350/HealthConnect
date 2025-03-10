@@ -1,108 +1,66 @@
-/* General Styles */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f8f9fa;
-  }
-  
-  /* Header */
-  header {
-    width: 100%;
-    background: #007bff;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  nav ul {
+}
+
+/* Responsive Navigation */
+nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10px 0;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     text-decoration: none;
-    color: white;
     font-weight: bold;
-  }
-  
-  /* Main Section */
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    max-width: 800px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  }
-  
-  h1, h2 {
-    margin-bottom: 10px;
-  }
-  
-  p {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  
-  /* Form Styles */
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  label {
-    margin: 5px 0;
-    font-weight: bold;
-  }
-  
-  input {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  input[type="submit"] {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background: #0056b3;
-  }
-  
-  /* Footer */
-  footer {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    background: #007bff;
-    color: white;
-    position: fixed;
-    bottom: 0;
-  }
+}
+
+/* Main Content Styling */
+main {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer Shadow */
+footer {
+    box-shadow: 0 -4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive Features */
+@media (max-width: 1024px) {
+    main {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
   
