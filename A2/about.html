@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Health Connect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            secondary: '#1e40af',
+            accent: '#93c5fd',
+            dark: '#1e293b',
+            light: '#f8fafc',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-800 bg-white">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-primary">Health Connect</div>
+        
+        <!-- Desktop Navigation (always visible on md screens and up) -->
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-600 hover:text-primary transition duration-300">Home</a>
+          <a href="about.html" class="text-gray-600 hover:text-primary transition duration-300">About</a>
+          <a href="services.html" class="text-gray-600 hover:text-primary transition duration-300">Services</a>
+          <a href="doctors.html" class="text-gray-600 hover:text-primary transition duration-300">Doctors</a>
+          <a href="contact.html" class="text-gray-600 hover:text-primary transition duration-300">Contact</a>
+        </div>
+        
+        <!-- Mobile menu button (hidden on md screens and up) -->
+        <button class="md:hidden focus:outline-none mobile-menu-button">
+          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu (hidden by default, shown when button clicked) -->
+      <div class="md:hidden hidden mobile-menu">
+        <div class="px-2 pt-2 pb-4 space-y-1">
+          <a href="index.html" class="block px-3 py-2 text-gray-600 hover:text-primary">Home</a>
+          <a href="about.html" class="block px-3 py-2 text-gray-600 hover:text-primary">About</a>
+          <a href="services.html" class="block px-3 py-2 text-gray-600 hover:text-primary">Services</a>
+          <a href="doctors.html" class="block px-3 py-2 text-gray-600 hover:text-primary">Doctors</a>
+          <a href="contact.html" class="block px-3 py-2 text-gray-600 hover:text-primary">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="bg-gradient-to-r from-primary to-secondary text-white py-24">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">About Health Connect</h2>
+      <p class="text-xl md:text-2xl opacity-90">Your Trusted Partner in Modern Healthcare</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-16 bg-white transform skew-y-1 -mb-8 z-10"></div>
+  </header>
+
+  <!-- Our Mission -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h3 class="text-3xl font-bold text-center text-dark mb-12">Our Mission</h3>
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <p class="text-lg text-gray-700 leading-relaxed">
+          At Health Connect, our mission is to make healthcare more accessible, efficient, and patient-focused. We aim to empower individuals and families by connecting them with trusted medical professionals and health services through a user-friendly digital platform.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class=" mt-12 py-20 bg-blue-50">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h3 class="text-3xl font-bold text-center text-dark mb-12">Our Journey</h3>
+      <div class="bg-white  p-8 rounded-xl shadow-lg">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Founded in 2020, Health Connect started as a simple appointment booking platform. Today, we've evolved into a complete healthcare ecosystem—offering everything from specialist consultations and virtual care to diagnostic lab bookings and chronic care management.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          We've partnered with over 300 clinics, hospitals, and independent healthcare providers across the country to offer a seamless patient experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h3 class="text-3xl font-bold text-center text-dark mb-12">What We Stand For</h3>
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <svg class="w-6 h-6 text-accent mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <div>
+              <strong class="text-primary">Patient First:</strong> 
+              <span class="text-gray-700">We prioritize your comfort, trust, and well-being in every feature we design.</span>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <svg class="w-6 h-6 text-accent mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <div>
+              <strong class="text-primary">Innovation:</strong> 
+              <span class="text-gray-700">We embrace technology to bring you faster, safer, and smarter care.</span>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <svg class="w-6 h-6 text-accent mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <div>
+              <strong class="text-primary">Transparency:</strong> 
+              <span class="text-gray-700">Clear communication, fair pricing, and honest reviews.</span>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <svg class="w-6 h-6 text-accent mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <div>
+              <strong class="text-primary">Community:</strong> 
+              <span class="text-gray-700">Supporting underprivileged communities with free health drives and digital education.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Overview -->
+  <section class="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h3 class="text-3xl font-bold text-center text-dark mb-12">Meet Our Team</h3>
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <p class="text-lg text-gray-700 leading-relaxed">
+          We are a team of doctors, engineers, designers, and entrepreneurs working with a shared vision—to revolutionize healthcare access for everyone. Our medical advisory board ensures our practices are ethical, effective, and always up-to-date.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-primary text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">Join the Health Revolution</h3>
+      <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+        Whether you're a patient looking for care or a provider looking to grow, Health Connect is the bridge to better health outcomes.
+      </p>
+      <a href="contact.html" class="inline-block bg-white text-primary font-bold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+        Connect With Us
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-2xl font-bold text-white mb-6 md:mb-0">Health Connect</div>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-accent transition duration-300">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="hover:text-accent transition duration-300">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+          <a href="#" class="hover:text-accent transition duration-300">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center md:text-left">
+        <p class="text-gray-400">&copy; 2023 Health Connect. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
